@@ -1,30 +1,70 @@
-html, body{
+html,
+body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+.main {
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-header {
+    font-size: 250%;
+}
+
+.section-header {
+    font-size: 200%;
+}
+
+.special-font {
+    font-size: 150%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: gold;
+    cursor: pointer;
+}
+
 /* ------------------------------------NAVBAR------------------------------------ */
 
-nav{
+nav {
     height: 10vh;
     background: black;
     color: white;
     width: 100vw;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    width: 60vw;
+    display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.nav-link, .nav-title{
+.nav-link,
+.nav-title {
     width: 15vw;
     text-align: center;
+}
+
+.nav-title {
+    font-size: 200%;
 }
 
 
 /* ------------------------------------HOMEPAGE BANNER------------------------------------ */
 
-#banner{
+#banner {
     min-height: 90vh;
     background: grey;
     color: white;
@@ -35,7 +75,7 @@ nav{
 
 /* ------------------------------------FEATURED------------------------------------ */
 
-#featured{
+#featured {
     min-height: 100vh;
     background: black;
     color: white;
@@ -46,39 +86,89 @@ nav{
     text-align: center;
 }
 
-.featured-info{
+.featured-info {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
-.featured-1{
+.featured-1 {
     width: 40vw;
 }
 
-.featured-2{
+.featured-2 {
     width: 40vw;
+}
+
+.banner-div {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.banner-img {
+    width: 100vw;
+}
+
+.mobile-banner-img {
+    display: none;
 }
 
 /* ------------------------------------ABOUT------------------------------------ */
 
-#about{
+#about {
     min-height: 100vh;
     background: white;
     color: black;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.about-1, .about-2{
-    width: 80vw;
+.about-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-1,
+.about-2 {
+    width: 40vw;
+}
+
+.about-img-div {
+    width: 60%;
+}
+
+.about-img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fa-brands {
+    font-size: 200% !important;
+    margin-top: 10px;
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.fa-brands:hover {
+    color: gold !important;
 }
 
 /* ------------------------------------WORKS------------------------------------ */
 
-#works{
+#works {
     min-height: 100vh;
     background: black;
     color: white;
@@ -89,12 +179,213 @@ nav{
     text-align: center;
 }
 
-.works-IMGs{
+.works-IMGs {
     display: flex;
     justify-content: space-around;
+    width: 80vw;
     flex-wrap: wrap;
 }
 
-.works-IMG{
-    width: 20vw;
+.works-IMG {
+    width: 15vw;
+    border-radius: 50%;
+}
+
+.works-IMG:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+
+/* ----------------------------PAPER SWORDS------------------------- */
+
+.ps-main {
+    min-height: 100vh;
+    background: #161440;
+    background: linear-gradient(165deg, #161440 45%, #2a2c7c 100%);
+    ;
+}
+
+.ps-banner {
+    width: 100vw;
+}
+
+
+/* -------------------------------MMAM------------------------------ */
+
+.MMAM-main {
+    min-height: 100vh;
+    color: white;
+    background: linear-gradient(120deg, rgb(193, 207, 100) 30%, rgb(103, 193, 217) 50%, rgb(205, 118, 168) 80%, rgb(205, 118, 168) 100%);
+}
+
+.mmam-banner-div {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.mmam-banner-img {
+    width: 60vw;
+}
+
+.mmam-mobile-banner-img {
+    display: none;
+}
+
+.mmam-info {
+    min-height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+}
+
+.mmam-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40vw;
+    text-align: center;
+}
+
+.mmam-img-div {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    width: 40vw;
+}
+
+.mmam-img-1,
+.mmam-img-2,
+.mmam-img-3 {
+    position: absolute;
+    width: 80%;
+    top: -10vh;
+    right: 0;
+}
+
+.mmam-img-1 {
+    animation: mmam-1 15s infinite;
+}
+
+@keyframes mmam-1 {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    35% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.mmam-img-2 {
+    animation: mmam-2 15s infinite;
+}
+
+@keyframes mmam-2 {
+    0% {
+        opacity: 0;
+    }
+
+    35% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    65% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.mmam-img-3 {
+    animation: mmam-3 15s infinite;
+}
+
+@keyframes mmam-3 {
+    0% {
+        opacity: 0;
+    }
+
+    65% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.mmam-media {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    min-height: 40vh;
+    margin: auto;
+    margin-top: 15vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.show-video {
+    width: 30vw !important;
+}
+
+
+/* ------------------------------SMID------------------------------- */
+
+.smid-main {
+    min-height: 100vh;
+    background: black;
+}
+
+
+/* ----------------------------DIFFERENT LENS------------------------- */
+
+.differentlens-main {
+    min-height: 100vh;
+    background: linear-gradient(149deg, rgb(160, 247, 106) 0%, rgb(247, 166, 99) 50%, rgb(243, 153, 219) 100%);
+}
+
+
+/* -----------------------------FOOTER-------------------------------- */
+
+footer {
+    min-height: 30vh;
+    background: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
