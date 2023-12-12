@@ -31,6 +31,21 @@ body {
     font-size: 2vw;
 }
 
+@media (max-width: 425px) {
+    .section-header {
+        font-size: 4.5vw;
+        margin-top: 5vh;
+    }
+    
+    .special-font {
+        font-size: 4vw;
+    }
+
+    .normal-font{
+        font-size: 2.9vw;
+    }
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -118,7 +133,8 @@ nav {
     height: 0;
     position: absolute;
     right: 0;
-    transition: 0.5s
+    transition: 0.5s;
+    z-index: 100;
 }
 
 .nav-link-expand {
@@ -175,6 +191,22 @@ nav {
     width: 100% !important;
 }
 
+@media (max-width: 425px) {
+    #banner{
+        flex-wrap: wrap-reverse;
+    }
+
+    .banner-name-div {
+        width: 80vw;
+        transform: translateY(-50%);
+    }
+    
+    .banner-img-div {
+        width: 80vw;
+        transform: translateY(30%);
+    }
+}
+
 /* ------------------------------------FEATURED------------------------------------ */
 
 #featured {
@@ -215,6 +247,10 @@ nav {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.SMID-spotify-player-home{
+    display: none;
 }
 
 .spotify-btn,
@@ -312,6 +348,18 @@ nav {
     .featured-2 {
         width: 80vw;
     }
+
+    .spotify-btn, .iTunes-btn{
+        display: none;
+    }
+
+    .SMID-spotify-player-home{
+        display: block;
+        margin-top: 10vh;
+        width: 60vw;
+        height: 200px;
+        background: rgb(234, 224, 224);
+    }
 }
 
 /* ------------------------------------ABOUT------------------------------------ */
@@ -380,7 +428,7 @@ nav {
     }
 
     .about-1 {
-        width: 30vw;
+        width: 45vw;
         margin: auto;
         margin-top: 2vh;
     }
@@ -447,7 +495,7 @@ nav {
     }
 
     .works-IMG {
-        width: 25vw;
+        width: 40vw;
         margin: 5vw;
     }
 
@@ -574,6 +622,7 @@ nav {
 .show-media {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 80vw;
     min-height: 40vh;
     margin: auto;
@@ -601,7 +650,7 @@ nav {
         top: 0;
         margin: auto;
         padding-top: 5vh;
-        width: 60%;
+        width: 80%;
     }
 
     .show-img-div {
@@ -614,7 +663,10 @@ nav {
     }
 
     .show-video {
-        height: 100px;
+        height: 250px;
+        width: 60vw !important;
+        margin: auto;
+        margin-top: 5vh;
     }
 }
 
@@ -631,6 +683,14 @@ nav {
 .ps-banner {
     margin-top: 10vh;
     width: 100vw;
+}
+
+@media (max-width: 425px) {
+    .ps-banner{
+        margin-top: 15vh;
+        width: 120vw;
+        transform: translateX(-10vw);
+    }
 }
 
 
@@ -657,6 +717,12 @@ nav {
 
 .mmam-mobile-banner-img {
     display: none;
+}
+
+@media (max-width: 425px) {
+    .mmam-banner-img{
+        width: 80vw;
+    }
 }
 
 
