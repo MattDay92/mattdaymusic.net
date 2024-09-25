@@ -504,6 +504,7 @@ nav {
 .works-IMG {
     width: 15vw;
     border-radius: 50%;
+    background: black;
 }
 
 .SMID-works-IMG {
